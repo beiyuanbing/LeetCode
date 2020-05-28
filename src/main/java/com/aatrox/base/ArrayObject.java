@@ -5,7 +5,7 @@ package com.aatrox.base;
  * @desc
  * @date 2020/5/28
  */
-public class ArrayObject {
+public  abstract class ArrayObject implements SortInterface{
     /**
      * 数组的输出
      * @param nums
