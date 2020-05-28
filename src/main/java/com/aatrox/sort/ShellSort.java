@@ -15,7 +15,7 @@ import com.aatrox.base.ArrayObject;
 public class ShellSort extends ArrayObject {
     @Override
     public int[] sort(int[] nums) {
-        for(int grap=nums.length/2;grap>0;grap--){
+        for(int grap=nums.length/2;grap>0;grap/=2){
             for(int i=0;i+grap<nums.length;i++){
                 int temp=nums[i+grap];
                 int preIndex=i;
