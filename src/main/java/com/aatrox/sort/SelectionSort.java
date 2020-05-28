@@ -7,6 +7,9 @@ import lombok.experimental.Accessors;
 /**
  * @author aatrox
  * @desc 选择排序时间
+ * 最佳情况：T(n) = O(n2)
+ * 最差情况：T(n) = O(n2)
+ * 平均情况：T(n) = O(n2)
  * @date 2020/5/28
  */
 @Data

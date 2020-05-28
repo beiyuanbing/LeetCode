@@ -1,6 +1,7 @@
 package com.aatrox.test;
 
 import com.aatrox.sort.BubbleSort;
+import com.aatrox.sort.InsertionSort;
 import com.aatrox.sort.SelectionSort;
 
 /**
@@ -14,6 +15,8 @@ public class SortTest {
         /***冒泡排序***/
         //new BubbleSort().setAsc(false).sort(nums);
         /***选择排序***/
-        new SelectionSort().setTwoSide(false).setAsc(false).sort(nums);
+        //new SelectionSort().setTwoSide(false).setAsc(false).sort(nums);
+        /****插入排序***/
+        new InsertionSort().sort(nums);
     }
 }
