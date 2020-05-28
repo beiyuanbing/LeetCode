@@ -3,6 +3,7 @@ package com.aatrox.test;
 import com.aatrox.sort.BubbleSort;
 import com.aatrox.sort.InsertionSort;
 import com.aatrox.sort.SelectionSort;
+import com.aatrox.sort.ShellSort;
 
 /**
  * @author aatrox
@@ -17,6 +18,8 @@ public class SortTest {
         /***选择排序***/
         //new SelectionSort().setTwoSide(false).setAsc(false).sort(nums);
         /****插入排序***/
-        new InsertionSort().sort(nums);
+        //new InsertionSort().sort(nums);
+        /****哈希排序***/
+        new ShellSort().sort(nums);
     }
 }
