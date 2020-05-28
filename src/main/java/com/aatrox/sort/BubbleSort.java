@@ -7,6 +7,9 @@ import lombok.experimental.Accessors;
 /**
  * @author aatrox
  * @desc 冒泡排序
+ * 最佳情况：T(n) = O(n)
+ * 最差情况：T(n) = O(n2)
+ * 平均情况：T(n) = O(n2)
  * @date 2020/5/28
  */
 @Data
@@ -35,15 +38,11 @@ public class BubbleSort extends ArrayObject {
                         toStringInt(nums);
                     }
                 }
-
             }
         }
         toStringInt(nums);
         return nums;
     }
 
-    public static void main(String[] args) {
-        int[] nums=new int[]{9,5,1,7,3,6,1,4};
-        new BubbleSort().setAsc(false).sort(nums);
-    }
+
 }
