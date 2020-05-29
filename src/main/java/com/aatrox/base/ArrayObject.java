@@ -46,4 +46,30 @@ public  abstract class ArrayObject implements SortInterface{
         System.arraycopy(array, 0, nums, 0, array.length);
         return nums;
     }
+
+    /**
+     * 拷贝数组，目标边缘的right也要拷贝
+     * @param source
+     * @param left
+     * @param right
+     * @return
+     */
+    public int[] copyArray(int[] source,int left,int right) {
+        int[] nums = new int[right-left+1];
+        System.arraycopy(source, left, nums, 0, nums.length);
+        return nums;
+    }
+
+    /**
+     * 数组拷贝，不算右边界值
+     * @param source
+     * @param left
+     * @param right
+     * @return
+     */
+    public int[] copyArrayRange(int[] source,int left,int right){
+        int[] nums=new int[right-left];
+        System.arraycopy(source, left, nums, 0, nums.length);
+        return nums;
+    }
 }

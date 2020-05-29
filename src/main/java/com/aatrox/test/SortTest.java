@@ -1,9 +1,7 @@
 package com.aatrox.test;
 
-import com.aatrox.sort.BubbleSort;
-import com.aatrox.sort.InsertionSort;
-import com.aatrox.sort.SelectionSort;
-import com.aatrox.sort.ShellSort;
+import com.aatrox.base.ArrayObject;
+import com.aatrox.sort.*;
 
 /**
  * @author aatrox
@@ -20,6 +18,7 @@ public class SortTest {
         /****插入排序***/
         //new InsertionSort().sort(nums);
         /****哈希排序***/
-        new ShellSort().sort(nums);
+        //new ShellSort().sort(nums);
+        ArrayObject.toStringInt(new MergeSort().sort(nums));
     }
 }
