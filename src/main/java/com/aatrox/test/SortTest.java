@@ -19,6 +19,9 @@ public class SortTest {
         //new InsertionSort().sort(nums);
         /****哈希排序***/
         //new ShellSort().sort(nums);
-        ArrayObject.toStringInt(new MergeSort().sort(nums));
+        /****归并排序****/
+        //ArrayObject.toStringInt(new MergeSort().sort(nums));
+        /****快速排序***/
+        new QuickSort().sort(nums);
     }
 }
