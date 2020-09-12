@@ -11,6 +11,12 @@ import com.aatrox.sort.*;
 public class SortTest {
     public static void main(String[] args) {
         int[] nums=new int[]{9,5,1,7,3,6,1,4};
+        Integer a = new Integer(1);
+        Integer b = new Integer(1);
+        System.out.println(a==b);
+        Integer a1 = Integer.valueOf(1);
+        Integer b1 = Integer.valueOf(1);
+        System.out.println(a1==b1);
         /***冒泡排序***/
         //new BubbleSort().setAsc(false).sort(nums);
         /***选择排序***/

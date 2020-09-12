@@ -1,8 +1,6 @@
 package com.aatrox.sort;
 
 import com.aatrox.base.ArrayObject;
-import lombok.Data;
-import lombok.experimental.Accessors;
 
 /**
  * @author aatrox
@@ -12,8 +10,6 @@ import lombok.experimental.Accessors;
  * 平均情况：T(n) = O(n2)
  * @date 2020/5/28
  */
-@Data
-@Accessors(chain = true)
 public class BubbleSort extends ArrayObject {
 
     /**是否是正序排，从小到大**/
